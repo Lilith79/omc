@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Origin SMP</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<h1>Origin SMP</h1>
+			<input type="checkbox" class="nav-toggle" id="nav-toggle">
+			<nav>
+				<ul>
+					<li><a href="#main-page" onclick="page(1)">Strona główna</a></li>
+					<li><a href="#install" onclick="page(2)">Instalacja</a></li>
+					<li><a href="#mods" onclick="page(3)">Mody</a></li>
+					<li><a href="#origins" onclick="page(4)">Originy</a></li>
+				</ul>
+			</nav>
+			<label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+		</div>
+		<div class="strona">
+		<div id="sekcja">
+			<div id="main-page">
+				<h1 class="title">Witamy na Origin SMP</h1>
+				<h2>ip serwera: <mark>originsmpkuro.aternos.me</mark></h2>
+			</div>			
+			<div id="install">
+			<h1 class="title">Instalacja</h1>
+				<div class="instrukcja">
+					<p>Pobierz paczkę modów: <a class="link" target="_blank" href="https://drive.google.com/file/d/18plNiqExzAVrlf3i5BXcrzbGvQI5dqSS/view?usp=sharing">Mody</a></p>
+					<p>Wyszukaj na komputerze %appdata% i wejdź do folderu .minecraft</p>
+					<p>Sprawdź, czy znajduje się w nim folder <mark>mods</mark></p>
+					<p>Jeśli nie, utwórz go</p>
+					<p>Wypakuj pobrane archiwum do folderu mods</p>
+					<p>W folderze mods znajdź plik <mark>fabric-installer-0.8.0.jar</mark> i uruchom go</p>
+					<p>Zmień wersje według poniższego screenshota i upewnij się, że lokalizacja instalacji kończy się na folderze <mark>.minecraft</mark></p>
+					<img src="instalka.png">
+					<p>Uruchom Minecrafta i zmień wersję na <mark>fabric-loader-1.16.5</mark></p>
+					<img src="wersja.png">
+				</div>
+			</div>			
+			<div id="mods">
+				<h1 class="title">Lista Modów</h1>
+				<div class="mod-list">
+					<h2>Biomy: </h2>
+					<div>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/betterend">Better End</a> — dodaje nowe bloki, biomy, przedmioty i moby do Endu</p>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/betternether">Better Nether</a> — dodaje nowe biomy, struktury, rośliny i moby do Netheru</p>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric">Oh The Biomes You'll Go [byg]</a> — dodaje 80+ biomów z nowymi blokami</p>
+					</div>
+					<h2>Struktury: </h2>
+					<div>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/castle-dungeons">Castle Dungeons</a> — Dodaje strukturę w postaci zamku</p>
+						<p><a href="">Dungeons Arise</a> — </p>
+					</div>
+					<h2>Inne: </h2>
+					<div>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/rpg-hud-fabric">RPG-HUD</a> — m.in. pokazuje ilość użyć na narzędziach, stopień zużycia zbroi oraz paski życia innych mobów</p>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/basic-nether-ores">Basic Nether Ores</a> — dodaje podstawowe rudy do Netheru</p>
+					</div>
+					<h2>Originy: </h2>
+					<div>
+					
+					</div>
+					<p><a href="">Daemonic</a> — Dodaje originy </p>
+					<p><a href="">Dungeons</a> — </p>
+					<p><a href="">Dungeons</a> — </p>
+					<p><a href="">Dungeons</a> — </p>
+					<p><a href="">Dungeons</a> — </p>
+					<p><a href="">Dungeons</a> — </p>
+					<p><a href="">Dungeons</a> — </p>
+					<p><a href="">Dungeons</a> — </p>
+				</div>
+			</div>			
+			<div id="origins">
+			<h1 class="title">Originy<h1>
+				<div class="rasy">
+					<ul>
+						<div>
+						<li id="human" onclick="rasa(human)">Human</li>
+						<li id="feline" onclick="rasa(feline)">Feline</li>
+						<li id="avian" onclick="rasa(avian)">Avian</li>
+						<li id="phantom" onclick="rasa(phantom)">Phantom</li>
+						<li id="merling" onclick="rasa(merling)">Merling</li>
+						<li id="drowned" onclick="rasa(drowned)">Drowned</li>
+						<li id="blazeborn" onclick="rasa(blazeborn)">Blazeborn</li>
+						<li id="shulk" onclick="rasa(shulk)">Shulk</li>
+						<li id="enderian" onclick="rasa(enderian)">Enderian</li>
+						<li id="elytrian" onclick="rasa(elytrian)">Elytrian</li>
+						<li id="arachnid" onclick="rasa(arachnid)">Arachnid</li>
+						<li id="floran" onclick="rasa(floran)">Floran</li>
+						<li id="inchling" onclick="rasa(inchling)">Inchling</li>
+						<li id="piglin" onclick="rasa(piglin)">Piglin</li>
+						<li id="slime" onclick="rasa(slime)">Slime</li></div>
+						<div><li>Strider</li>
+						<li class="h">Evoker</li>
+						<li class="h">Wolf</li>
+						<li class="h">Witch</li>
+						<li class="h">Bee</li>
+						<li class="h">Guardian</li>
+						<li class="h">Snow Golem</li>
+						<li class="h">Fox</li>
+						<li class="h">Voidwalker</li>
+						<li class="h">Panda</li>
+						<li class="h">Dragonborn</li>
+						<li class="h">Cursed</li>
+						<li class="h">Weeping</li>
+						<li class="h">Phoenix</li></div>
+					</ul>
+					<div id="origin"></div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- <script>
+			$(document).ready(function() {
+				$("#human").click(function() {
+					$("#human .list").toggle();
+				});
+			});
+		</script> -->
+		<script>
+			function rasa(race) {
+				var origin = document.getElementById("origin");
+				var oTitle = race.textContent;
+				
+				switch (race) {
+					case feline:
+					origin.innerHTML = `<ul class="list">
+							<h1>`+ oTitle + `</h1>
+							<li><mark class="plus">+</mark> nie dostaje obrażeń od spadania</li>
+							<li><mark class="plus">+</mark> podczas sprintu wyżej skacze</li>
+							<li><mark class="plus">+</mark> nieco lepiej widzi w ciemności</li>
+							<li><mark class="plus">+</mark> odstrasza Creepery</li>
+							<li><mark class="minus">-</mark> może wykopywać kamień tylko, gdy przylegają do niego najwyżej 2 kamienie (naturalnie wygenerowane) (chyba, że ma na sobie efekt siły)</li>
+							<li><mark class="minus">-</mark>1 serce mniej</li>
+						</ul>`;
+					break;
+					case human:
+						origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+							<li>Normalny gracz bez dodatkowych umiejętności lub słabości</li>
+							</ul>`;
+						break;
+					case avian:
+						origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> powoli opada, a zatem nie dostaje obrażeń od wysokości</li>
+								<li><mark class="plus">+</mark> jest nieco szybszy</li>
+								<li><mark class="minus">-</mark> może spać jedynie na dużej wysokości (Y86)</li>
+								<li><mark class="minus">-</mark> nie może jeść mięsa</li>
+							</ul>`;
+						break;
+					default: 
+						origin.innerHTML = "dzień";
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>
