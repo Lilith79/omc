@@ -8,6 +8,10 @@
 	font-family: Courier New;
 }
 
+html {
+	scroll-behavior: smooth;	
+}
+
 body {
 	background: #FFF;
 	font-size: 1.2em;
