@@ -291,6 +291,7 @@ mark {
 .instrukcja > p{
 	margin-bottom: 1em;
 	font-size: 1.5em;
+	text-align: center;
 }
 
 #install img {
@@ -302,6 +303,7 @@ mark {
 	position: relative;
 	min-height: 100vh;
 	background: url('bg3.png');
+	background-repeat: repeat;
 	color: #f22d49;	
 }
 
@@ -312,15 +314,13 @@ mark {
 }
 
 .mod-list {
-	margin: 1em 0 1em 0;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	width: 50%;
+	margin: 1em auto 0 auto;
+	width: 60%;
 	min-height: 40%;
 	outline: 1px dashed #f22d49;
 	outline-offset: -10px;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-self: center;
 	padding: 2em;
@@ -402,4 +402,40 @@ h2 {
 ul > h1 {
 	font-size: 1.05em;
 	font-weight: 700;
+}
+
+@media screen and (max-width: 960px){
+	.rasy > ul {
+		display: block;
+		font-size: 0.75em;
+	}
+	
+	#origin {
+		overflow: wrap;
+		font-size: 0.65em;
+		padding: 0.5em 0.5em 0.5em 0;
+	}
+	
+	#sekcja {
+		margin-top: 0;
+	}
+	
+	#main-page h1 {
+		text-align: center;
+		margin-right: 20%;
+	}
+	
+	#main-page h2 {
+		font-size: 1.1em;
+		text-align: center;
+	}
+	
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.instrukcja > p{
+		font-size: 1.2em;
+	}
 }

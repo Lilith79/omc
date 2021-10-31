@@ -63,9 +63,8 @@
 					</div>
 					<h2>Originy: </h2>
 					<div>
-					
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/daemonic">Daemonic</a> — Dodaje originy Cursed i Weeping</p>
 					</div>
-					<p><a href="">Daemonic</a> — Dodaje originy </p>
 					<p><a href="">Dungeons</a> — </p>
 					<p><a href="">Dungeons</a> — </p>
 					<p><a href="">Dungeons</a> — </p>
@@ -95,20 +94,20 @@
 						<li id="inchling" onclick="rasa(inchling)">Inchling</li>
 						<li id="piglin" onclick="rasa(piglin)">Piglin</li>
 						<li id="slime" onclick="rasa(slime)">Slime</li></div>
-						<div><li>Strider</li>
-						<li class="h">Evoker</li>
-						<li class="h">Wolf</li>
-						<li class="h">Witch</li>
-						<li class="h">Bee</li>
-						<li class="h">Guardian</li>
-						<li class="h">Snow Golem</li>
-						<li class="h">Fox</li>
-						<li class="h">Voidwalker</li>
-						<li class="h">Panda</li>
-						<li class="h">Dragonborn</li>
-						<li class="h">Cursed</li>
-						<li class="h">Weeping</li>
-						<li class="h">Phoenix</li></div>
+						<div><li id="strider" onclick="rasa(strider)">Strider</li>
+						<li id="evoker" onclick="rasa(evoker)">Evoker</li>
+						<li id="wolf" onclick="rasa(wolf)">Wolf</li>
+						<li id="witch" onclick="rasa(witch)">Witch</li>
+						<li id="bee" onclick="rasa(bee)">Bee</li>
+						<li id="guardian" onclick="rasa(guardian)">Guardian</li>
+						<li id="snowGolem" onclick="rasa(snowGolem)">Snow Golem</li>
+						<li id="fox" onclick="rasa(fox)">Fox</li>
+						<li id="voidwalker" onclick="rasa(voidwalker)">Voidwalker</li>
+						<li id="panda" onclick="rasa(panda)">Panda</li>
+						<li id="dragonborn" onclick="rasa(dragonborn)">Dragonborn</li>
+						<li id="cursed" onclick="rasa(cursed)">Cursed</li>
+						<li id="weeping" onclick="rasa(weeping)">Weeping</li>
+						<li id="phoenix" onclick="rasa(phoenix)">Phoenix</li></div>
 					</ul>
 					<div id="origin"></div>
 				</div>
@@ -150,6 +149,246 @@
 								<li><mark class="plus">+</mark> jest nieco szybszy</li>
 								<li><mark class="minus">-</mark> może spać jedynie na dużej wysokości (Y86)</li>
 								<li><mark class="minus">-</mark> nie może jeść mięsa</li>
+							</ul>`;
+						break;
+						case phantom:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> gdy jest w trybie phantoma może przenikać przez bloki (tak jakby ma x-raya)</li>
+								<li><mark class="plus">+</mark> w tym stanie jest też niewidzialny</li>
+								<li><mark class="minus">-</mark> w tym stanie szybciej robi się głodny</li>
+								<li><mark class="minus">-</mark> gdy nie jest w tym stanie pali się w słońcu</li>
+								<li><mark class="minus">-</mark> 3 serca mniej</li>
+							</ul>`;
+						break;						
+						case merling:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> może oddychać pod wodą</li>
+								<li><mark class="plus">+</mark> dobrze widzi pod wodą</li>
+								<li><mark class="plus">+</mark> niszczy pod wodą bloki jak gracz normalnie na lądzie</li>
+								<li><mark class="plus">+</mark> szybciej pływa</li>
+								<li><mark class="plus">+</mark> nie tonie</li>
+								<li><mark class="minus">-</mark> na lądzie ma ograniczony zasób tlenu</li>
+							</ul>`;
+						break;						
+						case drowned:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> może oddychać pod wodą</li>
+								<li><mark class="plus">+</mark> dobrze widzi pod wodą</li>
+								<li><mark class="plus">+</mark> niszczy pod wodą bloki jak gracz normalnie na lądzie</li>
+								<li><mark class="plus">+</mark> szybciej pływa</li>
+								<li><mark class="plus">+</mark> nie tonie</li>
+								<li><mark class="plus">+</mark> rzuca trójzębem</li>
+								<li><mark class="minus">-</mark> na lądzie ma ograniczony zasób tlenu</li>
+							</ul>`;
+						break;						
+						case blazeborn:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> odporny na ogień i lawę</li>
+								<li><mark class="plus">+</mark> zadaje więcej obrażeń, gdy się pali</li>
+								<li><mark class="plus">+</mark> odporny na efekt głodu (np. po zjedzeniu mięsa zombie) i truciznę</li>
+								<li><mark class="minus">-</mark> zaczyna grę w Netherze</li>
+								<li><mark class="minus">-</mark> traci życie przy kontakcie z wodą</li>
+							</ul>`;
+						break;						
+						case shulk:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> ma dodatkowe 9 slotów ekwipunku, których nie traci po śmierci</li>
+								<li><mark class="plus">+</mark> ma naturalną ochronę (4 zbroje nad paskiem życia)</li>
+								<li><mark class="plus">+</mark> może niszczyć kamień ręką</li>
+								<li><mark class="minus">-</mark> nie może używać tarczy</li>
+								<li><mark class="minus">-</mark> szybciej się męczy (sprint, skakanie, pływanie, obrywanie sprawiają, że szybciej spada pasek głodu)</li>
+							</ul>`;
+						break;						
+						case enderian:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> ma nieograniczone enderperły</li>
+								<li><mark class="plus">+</mark> ma nieco dłuższy zasięg niszczenia, stawiania bloków i atakowania</li>
+								<li><mark class="minus">-</mark> traci życie przy kontakcie z wodą</li>
+								<li><mark class="minus">-</mark> boi się dyni</li>
+							</ul>`;
+						break;						
+						case elytrian:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> ma domyślnie elytrę, która nie zabiera slotu napierśnika</li>
+								<li><mark class="plus">+</mark> co 30 sekund może wystrzelić się 20 bloków w górę</li>
+								<li><mark class="plus">+</mark> zadaje podwójne obrażenia podczas lotu</li>
+								<li><mark class="minus">-</mark> może maksymalnie nosić zbroję złotą lub kolczugową</li>
+								<li><mark class="minus">-</mark> dostaje większe obrażenia od kolizji z blokami (spadanie, uderzanie w bloki podczas lotu)</li>
+								<li><mark class="minus">-</mark> dostaje słabość i spowolnienie, gdy ma nad sobą mniej niż cztery bloki puste (to stakuje się)</li>
+							</ul>`;
+						break;						
+						case arachnid:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> może wspinać się po blokach</li>
+								<li><mark class="plus">+</mark> otacza przeciwników pajęczynami przy ataku</li>
+								<li><mark class="minus">-</mark> 3 serca mniej</li>
+								<li><mark class="minus">-</mark> może jeść wyłącznie mięso</li>
+							</ul>`;
+						break;						
+						case floran:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> może jedzeniem sprawiać, by rosły rośliny</li>
+								<li><mark class="plus">+</mark> uzupełnia pasek głodu, gdy jest w słońcu</li>
+								<li><mark class="plus">+</mark> gdy jest mokry zadaje +2 obrażenia</li>
+								<li><mark class="minus">-</mark> dostaje podwójne obrażenia od ognia</li>
+								<li><mark class="minus">-</mark> zbyt zimne lub gorące biomy dają efekt spowolnienia</li>
+								<li><mark class="minus">-</mark> może jeść jedynie miód (w butelkach)</li>
+							</ul>`;
+						break;						
+						case inchling:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> jest 4 razy mniejszy niż normalny gracz</li>
+								<li><mark class="plus">+</mark>0.5 prędkości ataku</li>
+								<li><mark class="plus">+</mark> ma odporność na ciernie i obrażenia od prędkości</li>
+								<li><mark class="plus">+</mark> nie dostaje spowolnienia na blokach jak np. pajęczyny</li>
+								<li><mark class="plus">+</mark> potrzebuje mniej jedzenia</li>
+								<li><mark class="plus">+</mark> może jeździć na innych graczach</li>
+								<li><mark class="plus">+</mark> może wspinać się po blokach</li>
+								<li><mark class="minus">-</mark> ma o połowę mniej serc</li>
+								<li><mark class="minus">-</mark>0.25 zasięgu ataku</li>
+								<li><mark class="minus">-</mark>1 zasięgu stawiania bloków</li>
+							</ul>`;
+						break;
+						case piglin:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> złote narzędzia zadają dodatkowe obrażenia, a złota zbroja daje dodatkową ochronę. Wolniej się psują, natomiast wszystkie inne (oprócz netheritowych) psują się szybciej</li>
+								<li><mark class="plus">+</mark> zbroja netheritowa daje mały bonus do szybkości</li>
+								<li><mark class="plus">+</mark> pigliny nie atakują go, dopóki nie zaatakuje ich (nie dotyczy to brutes)</li>
+								<li><mark class="plus">+</mark> zadaje o 75% większe obrażenia kuszą</li>
+								<li><mark class="minus">-</mark> zaczyna grę w Netherze</li>
+								<li><mark class="minus">-</mark> gdy jest poza Netherem zaczyna się zombifikować i staje się odporny na ogień, ale wolniejszy</li>
+								<li><mark class="minus">-</mark> może jeść tylko mięso</li>
+								<li><mark class="minus">-</mark> 2 serca mniej</li>
+								<li><mark class="minus">-</mark> dostaje słabość, gdy jest blisko Soul Fire</li>
+							</ul>`;
+						break;
+						case slime:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> odbija się od bloków</li>
+								<li><mark class="plus">+</mark> przywołuje slime’y, które dla niego walczą</li>
+								<li><mark class="minus">-</mark> kiedy ma mniej niż 2 serca zadaje mniej obrażeń</li>
+							</ul>`;
+						break;
+						case strider:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> może chodzić po lawie i jest odporny na ogień</li>
+								<li><mark class="plus">+</mark> jest szybszy na lawie</li>
+								<li><mark class="minus">-</mark> zaczyna grę w Netherze</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+							</ul>`;
+						break;						
+						case evoker:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> przywołuje Kły Evokera</li>
+								<li><mark class="plus">+</mark> ma 15% szans na niezniszczenie totemu przy wskrzeszeniu</li>
+								<li><mark class="minus">-</mark> wieśniacy są do niego wrogo nastawieni</li>
+							</ul>`;
+						break;						
+						case wolf:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> oswojone wilki są silniejsze</li>
+								<li><mark class="plus">+</mark> silniejszy podczas pełni</li>
+								<li><mark class="minus">-</mark> może jeść wyłącznie mięso</li>
+								<li><mark class="minus">-</mark> 2 serca mniej</li>
+							</ul>`;
+						break;						
+						case witch:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> mikstury mają 2x dłuższy efekt działania</li>
+								<li><mark class="plus">+</mark> ma umiejętność dającą przydatne efekty mikstur (zakładam, że chodzi o wszelkie pozytywne)</li>
+								<li><mark class="minus">-</mark> wieśniacy są do niej wrogo nastawieni</li>
+							</ul>`;
+						break;
+						case bee:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> żądli ręką</li>
+								<li><mark class="plus">+</mark> gdy jest w pobliżu kwiatów dostaje Regenerację I</li>
+								<li><mark class="plus">+</mark> pszczoły nie atakują cię, gdy zbierzesz od nich miód</li>
+								<li><mark class="plus">+</mark> ma powolne opadanie</li>
+								<li><mark class="minus">-</mark> 2 serca mniej</li>
+								<li><mark class="minus">-</mark> nie może jeść mięsa</li>
+							</ul>`;
+						break;
+						case guardian:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> ma kolce, które ranią atakujących go</li>
+								<li><mark class="plus">+</mark> może oddychać pod wodą i lepiej pływa</li>
+								<li><mark class="plus">+</mark> ewoluuje po zabiciu Elder Guardian</li>
+								<li><mark class="minus">-</mark> nie może oddychać na lądzie i jest na nim wolniejszy</li>
+							</ul>`;
+						break;						
+						case snowGolem:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> może ranić śnieżkami</li>
+								<li><mark class="plus">+</mark> zadaje więcej obrażeń w zimnych biomach</li>
+								<li><mark class="plus">+</mark> zostawia za sobą śnieg</li>
+								<li><mark class="minus">-</mark> powoli traci maksymalne zdrowie i prędkość w gorących biomach</li>
+							</ul>`;
+						break;						
+						case fox:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> dostaje bonus do prędkości, gdy w pobliżu są ludzie</li>
+								<li><mark class="plus">+</mark> jagody lepiej zapełniają pasek głodu</li>
+								<li><mark class="plus">+</mark> nie dostaje obrażeń od krzaczków z jagodami</li>
+								<li><mark class="plus">+</mark> z większej odległości zbiera przedmioty</li>
+								<li><mark class="minus">-</mark> 2 serca mniej</li>
+							</ul>`;
+						break;						
+						case voidwalker:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> ma elytrę i może wystrzeliwać w powietrze</li>
+								<li><mark class="plus">+</mark> może chodzić po lawie (ale dalej od niej obrywa)</li>
+								<li><mark class="plus">+</mark> dostaje regenerację, gdy ma mniej niż 5 serc (po 60 sekundach dostaje spowolnienie i słabość)</li>
+								<li><mark class="plus">+</mark> ma więcej serc</li>
+								<li><mark class="minus">-</mark> dostaje podwójne obrażenia od ognia</li>
+								<li><mark class="minus">-</mark> szybciej robi się głodny</li>
+								<li><mark class="minus">-</mark> zaczyna grę w End City</li>
+							</ul>`;
+						break;						
+						case panda:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> szybciej niszczy bloki, gdy jest najedzona</li>
+								<li><mark class="plus">+</mark> używa 4 głodu, aby dostać siłę na 2min i 30s</li>
+								<li><mark class="minus">-</mark> potrzebuje 2x jedzenia</li>
+							</ul>`;
+						break;						
+						case dragonborn:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> może używać smoczego oddechu trwającego 40s i mającego 1 min CD</li>
+								<li><mark class="plus">+</mark> ma elytrę i powolne opadanie</li>
+								<li><mark class="plus">+</mark> ma dodatkowy armor</li>
+								<li><mark class="plus">+</mark> może niszczyć kamień ręką i szybciej nią wszystko niszczy</li>
+								<li><mark class="minus">-</mark> zaczyna grę w End City</li>
+							</ul>`;
+						break;						
+						case cursed:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="plus">+</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case weeping:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> podwójna prędkość ataku, chodzenia i większy zasięg, gdy ma pełen pasek zasobów</li>
+								<li><mark class="plus">+</mark> pasek zasobów wypełnia się, gdy zada się ponad 1 serce obrażeń (ma to cooldown)</li>
+								<li><mark class="plus">+</mark> może dać efekt sprawiający, że wszyscy w jego obszarze dostają olbrzymie obrażenia)</li>
+								<li><mark class="plus">+</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> 5 serc</li>
+								<li><mark class="minus">-</mark> dostaje większe obrażenia od upadku</li>
+							</ul>`;
+						break;						
+						case phoenix:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> dostaje regenerację w słońcu</li>
+								<li><mark class="plus">+</mark> ma elytrę</li>
+								<li><mark class="plus">+</mark> nie dostaje obrażeń od ognia ani lawy</li>
+								<li><mark class="plus">+</mark> zaczyna grę w Netherze</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
 							</ul>`;
 						break;
 					default: 
