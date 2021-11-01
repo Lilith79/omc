@@ -238,19 +238,28 @@ nav a:hover {
 
 /*STRONA GŁÓWNA*/ 
 #main-page {
-	height: 100vh;
-	background: url('bg1.png');
+	min-height: 100vh;
+	background: url('bg4.png');
 	color: #f22d49;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	position: relative;
+	background-size: cover;
 }
 
 #main-page h1 {
-	mix-blend-mode: screen;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	mix-blend-mode: hard-light;
 	font-size: 4em;
 	color: #03b1e6;
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 0;
 }
 
 #main-page h2 {
@@ -262,11 +271,48 @@ nav a:hover {
 h2 mark {
 	background: url(text.png);
 	background-position: bottom;
+	animation: bg 25s infinite;
 	font-size: 1.4em;
 	background-size: cover;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
+}
+
+@keyframes bg {
+	0% {
+		background-position: bottom;
+	}
+	50% {
+		background-position: top;
+	}
+	100% {
+		background-position: bottom;
+	}
+}
+
+.info {
+	z-index: 90;
+	position: absolute;
+	top: 65vh;
+	right: 0;
+	width: 20vw;
+	height: 7vh;
+	font-size: 2em;
+	font-weight: 900;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	line-height: 7vh;
+	color: transparent;
+	transition: width 1s ease-in-out,
+				color 250ms ease-in-out;
+}
+
+.info:hover {
+	width: 30vw;
+	color: #312e3f;
+	transition: width 1s ease-in-out,
+				color 1s ease-in-out 500ms;
 }
 
 /*STRONA INSTALACJI*/
@@ -292,6 +338,7 @@ mark {
 	margin-bottom: 1em;
 	font-size: 1.5em;
 	text-align: center;
+	line-height: 1.4em;
 }
 
 #install img {
@@ -342,6 +389,7 @@ h2 {
 .mod-list p {
 	font-size: 1.5em;
 	margin-bottom: 5px;
+	text-shadow: none;
 }
 
 .mod-list p a {
@@ -357,6 +405,7 @@ h2 {
 
 /*ORIGINY*/
 #origins {
+	position: relative;
 	min-height: 94vh;
 	background: #312e3f;
 	color: #FFF;
@@ -405,28 +454,62 @@ ul > h1 {
 }
 
 @media screen and (max-width: 960px){
+
+	.rasy {
+		justify-content: space-evenly;
+	}
 	.rasy > ul {
 		display: block;
 		font-size: 0.75em;
+		padding: 1.5em .5em 1.5em .5em;
 	}
 	
 	#origin {
 		overflow: wrap;
 		font-size: 0.65em;
-		padding: 0.5em 0.5em 0.5em 0;
+		padding: 0.5em;
+		width: 50%;
+	}
+	
+	.title {
+		padding: 0.5em 0 0.5em 0.2em;
+		letter-spacing: 0.1em;
+	}
+	
+	#origin ul {
+		padding: 0;
 	}
 	
 	#sekcja {
 		margin-top: 0;
 	}
 	
-	#main-page h1 {
-		text-align: center;
-		margin-right: 20%;
+	#main-page {
+		background-position: center;
 	}
 	
 	#main-page h2 {
-		font-size: 1.1em;
+		position: absolute;
+		top: 75%; 
+	}
+	
+	h2 mark {
+		font-size: 1.2em;
+	}
+	
+	#mods {
+		background-position: center;
+	}
+	
+	#main-page h1 {
+		font-size: 4.5em;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	
+	#main-page h2 {
+		transform: translateY(-10vh);
+		font-size: 2em;
 		text-align: center;
 	}
 	
@@ -435,7 +518,93 @@ ul > h1 {
 		height: 100%;
 	}
 	
+	.instrukcja {
+		padding: 0 .2em 0 .2em;
+	}
 	.instrukcja > p{
 		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+	
+	.mod-list {
+		width: 96%;
+	}
+
+	.mod-list h2 {
+		font-size: 2em;
+	}
+
+	.mod-list p {
+		font-size: 1.9em;
+	}
+
+	.mod-list p a {
+		font-size: 1em;
+	}
+	
+	.info {
+		width: 50vw;
+		font-size: 2em;
+		top: 85%;
+	}
+	
+	.info:hover {
+		width: 60vw;
 	}
 }
+
+@media screen and (min-width: 500px){
+	.rasy > ul {
+		font-size: .95em;
+	}		
+	
+	#origin {
+		font-size: 0.85em;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+	.mod-list h2 {
+		font-size: 1.6em;
+	}
+
+	.mod-list p {
+		font-size: 1.4em;
+	}
+
+	.mod-list p a {
+		font-size: 1.2em;
+	}	
+}
+
+@media screen and (max-width: 400px){
+	
+	.info {
+		font-size: 1.4em;
+	}
+	
+	.info:hover {
+		width: 80vw;
+	}
+	
+	#main-page h1 {
+		font-size: 3.2em;
+	}
+	
+	#main-page h2 {
+		font-size: 1.1em;
+	}
+	
+	.mod-list h2 {
+		font-size: 1.35em;
+	}
+
+	.mod-list p {
+		font-size: 1.25em;
+	}
+
+	.mod-list p a {
+		font-size: 1em;
+	}
+}
+
