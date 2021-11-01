@@ -300,7 +300,7 @@ h2 mark {
 	height: 7vh;
 	font-size: 2em;
 	font-weight: 900;
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(49, 46, 63, 0.5);
 	text-align: center;
 	line-height: 7vh;
 	color: transparent;
@@ -310,7 +310,7 @@ h2 mark {
 
 .info:hover {
 	width: 30vw;
-	color: #312e3f;
+	color: white;
 	transition: width 1s ease-in-out,
 				color 1s ease-in-out 500ms;
 }
