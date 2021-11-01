@@ -351,6 +351,7 @@ mark {
 	min-height: 100vh;
 	background: url('bg3.png');
 	background-repeat: repeat;
+	background-size: cover;
 	color: #f22d49;	
 }
 
