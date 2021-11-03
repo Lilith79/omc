@@ -5,6 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Origin SMP</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
@@ -24,7 +32,7 @@
 		<div class="strona">
 		<div id="sekcja">
 			<div id="main-page">
-				<h1 class="title">Witamy na Origin SMP</h1>
+				<h1 class="title" data-text="Witamy na Origin SMP">Witamy na Origin SMP</h1>
 				<h2>ip serwera: <mark>originsmpkuro.aternos.me</mark></h2>
 				<div class="info">keepInventory true</div>
 			</div>			
@@ -67,6 +75,8 @@
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/mermod-fabric" target="_blank">Mermod</a> — dodaje naszyjnik zmieniający w wodzie nogi w ogon, który można barwić</p>
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/pehkui" target="_blank">Pehkui</a> — dodaje komendy pozwalające zmieniać różne skale np. wysokość, zasięg, obrażenia od upadku (jest niezbędny do działania innych modów, natomiast jego samego nie jest w planach, aby używać)</p>
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items" target="_blank">Roughly Enough Items</a> — pozwala sprawdzać receptury przedmiotów, włącznie z tymi z modów</p>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/winged/" target="_blank">Winged</a> — dodaje 59 skrzydłeł działających jak elytra, a które nie zajmują slotu napierśnika</p>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/blockshifter" target="_blank">Blockshifter</a> — dodaje blok pozwalający przesuwać inne bloki, np. do łatwego tworzenia bram</p>
 					</div>
 					<h2>Originy: </h2>
 					<div>
@@ -76,7 +86,6 @@
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/origins" target="_blank">Origins</a> — główny mod dodający originy. Daje Enderiana, Merlinga, Phantoma, Elytriana, Blazeborna, Aviana, Arachnida, Shulkera i Feline</p>
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/voidwalker-origin" target="_blank">Voidwalker Origins</a> — dodaje originy Voidwalker, Panda, Dragonborn i Drowned</p>
 					</div>
-					<p><a href="https://www.curseforge.com/minecraft/mc-mods/age-of-exile" target="_blank">World of Exile</a> — </p>
 				</div>
 			</div>			
 			<div id="origins">
@@ -84,35 +93,35 @@
 				<div class="rasy">
 					<ul>
 						<div>
-						<li id="human" onclick="rasa(human)">Human</li>
-						<li id="feline" onclick="rasa(feline)">Feline</li>
-						<li id="avian" onclick="rasa(avian)">Avian</li>
-						<li id="phantom" onclick="rasa(phantom)">Phantom</li>
-						<li id="merling" onclick="rasa(merling)">Merling</li>
-						<li id="drowned" onclick="rasa(drowned)">Drowned</li>
-						<li id="blazeborn" onclick="rasa(blazeborn)">Blazeborn</li>
-						<li id="shulk" onclick="rasa(shulk)">Shulk</li>
-						<li id="enderian" onclick="rasa(enderian)">Enderian</li>
-						<li id="elytrian" onclick="rasa(elytrian)">Elytrian</li>
-						<li id="arachnid" onclick="rasa(arachnid)">Arachnid</li>
-						<li id="floran" onclick="rasa(floran)">Floran</li>
-						<li id="inchling" onclick="rasa(inchling)">Inchling</li>
-						<li id="piglin" onclick="rasa(piglin)">Piglin</li>
-						<li id="slime" onclick="rasa(slime)">Slime</li></div>
-						<div><li id="strider" onclick="rasa(strider)">Strider</li>
-						<li id="evoker" onclick="rasa(evoker)">Evoker</li>
-						<li id="wolf" onclick="rasa(wolf)">Wolf</li>
-						<li id="witch" onclick="rasa(witch)">Witch</li>
-						<li id="bee" onclick="rasa(bee)">Bee</li>
-						<li id="guardian" onclick="rasa(guardian)">Guardian</li>
-						<li id="snowGolem" onclick="rasa(snowGolem)">Snow Golem</li>
-						<li id="fox" onclick="rasa(fox)">Fox</li>
-						<li id="voidwalker" onclick="rasa(voidwalker)">Voidwalker</li>
-						<li id="panda" onclick="rasa(panda)">Panda</li>
-						<li id="dragonborn" onclick="rasa(dragonborn)">Dragonborn</li>
-						<li id="cursed" onclick="rasa(cursed)">Cursed</li>
-						<li id="weeping" onclick="rasa(weeping)">Weeping</li>
-						<li id="phoenix" onclick="rasa(phoenix)">Phoenix</li></div>
+						<li id="human" onclick="rasa(human)"><div class="icon"><img src="icons/human.png"></div>Human</li>
+						<li id="feline" onclick="rasa(feline)"><div class="icon"><img src="icons/feline.png"></div>Feline</li>
+						<li id="avian" onclick="rasa(avian)"><div class="icon"><img src="icons/avian.png"></div>Avian</li>
+						<li id="phantom" onclick="rasa(phantom)"><div class="icon"><img src="icons/phantom.png"></div>Phantom</li>
+						<li id="merling" onclick="rasa(merling)"><div class="icon"><img src="icons/merling.png"></div>Merling</li>
+						<li id="drowned" onclick="rasa(drowned)"><div class="icon"><img src="icons/drowned.png"></div>Drowned</li>
+						<li id="blazeborn" onclick="rasa(blazeborn)"><div class="icon"><img src="icons/blazeborn.png"></div>Blazeborn</li>
+						<li id="shulk" onclick="rasa(shulk)"><div class="icon"><img src="icons/shulk.png"></div>Shulk</li>
+						<li id="enderian" onclick="rasa(enderian)"><div class="icon"><img src="icons/enderian.png"></div>Enderian</li>
+						<li id="elytrian" onclick="rasa(elytrian)"><div class="icon"><img src="icons/elytrian.png"></div>Elytrian</li>
+						<li id="arachnid" onclick="rasa(arachnid)"><div class="icon"><img src="icons/arachnid.png"></div>Arachnid</li>
+						<li id="floran" onclick="rasa(floran)"><div class="icon"><img src="icons/floran.png"></div>Floran</li>
+						<li id="inchling" onclick="rasa(inchling)"><div class="icon"><img src="icons/inchling.png"></div>Inchling</li>
+						<li id="piglin" onclick="rasa(piglin)"><div class="icon"><img src="icons/piglin.png"></div>Piglin</li>
+						<li id="slime" onclick="rasa(slime)"><div class="icon"><img src="icons/slime.png"></div>Slime</li></div>
+						<div><li id="strider" onclick="rasa(strider)"><div class="icon"><img src="icons/strider.png"></div>Strider</li>
+						<li id="evoker" onclick="rasa(evoker)"><div class="icon"><img src="icons/evoker.png"></div>Evoker</li>
+						<li id="wolf" onclick="rasa(wolf)"><div class="icon"><img src="icons/wolf.png"></div>Wolf</li>
+						<li id="witch" onclick="rasa(witch)"><div class="icon"><img src="icons/witch.png"></div>Witch</li>
+						<li id="bee" onclick="rasa(bee)"><div class="icon"><img src="icons/bee.png"></div>Bee</li>
+						<li id="guardian" onclick="rasa(guardian)"><div class="icon"><img src="icons/guardian.png"></div>Guardian</li>
+						<li id="snowGolem" onclick="rasa(snowGolem)"><div class="icon"><img src="icons/snowGolem.png"></div>Snow Golem</li>
+						<li id="fox" onclick="rasa(fox)"><div class="icon"><img src="icons/fox.png"></div>Fox</li>
+						<li id="voidwalker" onclick="rasa(voidwalker)"><div class="icon"><img src="icons/voidwalker.png"></div>Voidwalker</li>
+						<li id="panda" onclick="rasa(panda)"><div class="icon"><img src="icons/panda.png"></div>Panda</li>
+						<li id="dragonborn" onclick="rasa(dragonborn)"><div class="icon"><img src="icons/dragonborn.png"></div>Dragonborn</li>
+						<li id="cursed" onclick="rasa(cursed)"><div class="icon"><img src="icons/cursed.png"></div>Cursed</li>
+						<li id="weeping" onclick="rasa(weeping)"><div class="icon"><img src="icons/weeping.png"></div>Weeping</li>
+						<li id="phoenix" onclick="rasa(phoenix)"><div class="icon"><img src="icons/phoenix.png"></div>Phoenix</li></div>
 					</ul>
 					<div id="origin"></div>
 				</div>
