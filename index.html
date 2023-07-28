@@ -91,6 +91,7 @@
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/origins" target="_blank">Origins</a> — główny mod dodający originy. Daje Enderiana, Merlinga, Phantoma, Elytriana, Blazeborna, Aviana, Arachnida, Shulkera i Feline</p>
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/voidwalker-origin" target="_blank">Voidwalker Origins</a> — dodaje originy Voidwalker, Panda, Dragonborn i Drowned</p>
 						<p><a href="https://www.curseforge.com/minecraft/mc-mods/origins-umbrellas" target="_blank">Origins: Umbrellas</a> — dodaje parasol, który chroni przed deszczem i słońcem</p>
+						<p><a href="https://www.curseforge.com/minecraft/mc-mods/environmental-armor" target="_blank">Environmental Armor</a> — dodaje przedmioty ułatwiające przeżycie wodnym rasom na lądzie oraz na słońcu</p>
 					</div>
 				</div>
 			</div>			
@@ -114,12 +115,12 @@
 						<li id="inchling" onclick="rasa(inchling)"><div class="icon"><img src="icons/inchling.png"></div>Inchling</li>
 						<li id="piglin" onclick="rasa(piglin)"><div class="icon"><img src="icons/piglin.png"></div>Piglin</li>
 						<li id="slime" onclick="rasa(slime)"><div class="icon"><img src="icons/slime.png"></div>Slime</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
+						<li id="dimentional" onclick="rasa(dimentional)"><div class="icon"><img src="icons/weeping.png"></div>Dimensional Being</li>
+						<li id="goatlin" onclick="rasa(goatlin)"><div class="icon"><img src="icons/weeping.png"></div>Goatlin</li>
+						<li id="god" onclick="rasa(god)"><div class="icon"><img src="icons/weeping.png"></div>God</li>
+						<li id="iron" onclick="rasa(iron)"><div class="icon"><img src="icons/weeping.png"></div>Iron Golem</li>
+						<li id="lato" onclick="rasa(lato)"><div class="icon"><img src="icons/weeping.png"></div>Lato</li>
+						<li id="lsharkian" onclick="rasa(lsharkian)"><div class="icon"><img src="icons/weeping.png"></div>Lava Sharkian</li>
 						<li id="astronos" onclick="rasa(astronos)"><div class="icon"><img src="icons/weeping.png"></div>Astronos</li></div>
 						<div><li id="strider" onclick="rasa(strider)"><div class="icon"><img src="icons/strider.png"></div>Strider</li>
 						<li id="evoker" onclick="rasa(evoker)"><div class="icon"><img src="icons/evoker.png"></div>Evoker</li>
@@ -135,12 +136,12 @@
 						<li id="axolotl" onclick="rasa(axolotl)"><div class="icon"><img src="icons/cursed.png"></div>Axolotl</li>
 						<li id="cobblestonian" onclick="rasa(cobblestonian)"><div class="icon"><img src="icons/weeping.png"></div>Cobblestonian</li>
 						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
-						<li id="daltog" onclick="rasa(daltog)"><div class="icon"><img src="icons/weeping.png"></div>Daltog</li>
+						<li id="nukelian" onclick="rasa(nukelian)"><div class="icon"><img src="icons/weeping.png"></div>Nukelian</li>
+						<li id="sharkian" onclick="rasa(sharkian)"><div class="icon"><img src="icons/weeping.png"></div>Sharkian</li>
+						<li id="slimeeq" onclick="rasa(slimeeq)"><div class="icon"><img src="icons/weeping.png"></div>Slimeeq</li>
+						<li id="tauros" onclick="rasa(tauros)"><div class="icon"><img src="icons/weeping.png"></div>Tauros</li>
+						<li id="trashling" onclick="rasa(trashling)"><div class="icon"><img src="icons/weeping.png"></div>Trashling</li>
+						<li id="warden" onclick="rasa(warden)"><div class="icon"><img src="icons/weeping.png"></div>Warden</li>
 						<li id="phoenix" onclick="rasa(phoenix)"><div class="icon"><img src="icons/phoenix.png"></div>Phoenix</li></div>
 					</ul>
 					<div id="origin"></div>
@@ -425,6 +426,17 @@
 								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
 							</ul>`;
 						break;
+						case astronos:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+       								<li><mark class="plus">+</mark> Może stać się niewrażliwy na obrażenia przy użyciu zdolności</li>
+	       							<li><mark class="plus">+</mark> Może pływać przez przestworza</li>
+	       							<li><mark class="plus">+</mark> Nie otrzymuje obrażeń od upadku</li>
+	       							<li><mark class="plus">+</mark><mark class="minus">-</mark> Otrzymuje buffy i debuffy zależnie od tego, czy jest w powietrzu</li>
+	       							<li><mark class="minus">-</mark> Może nosić tylko lekką zbroję</li>
+	       							<li><mark class="minus">-</mark> Bez nieba staje się słaby</li>
+	       							<li><mark class="minus">-</mark> Nie może używać tarcz</li>
+	       						</ul>`;
+	       					break;
 					default: 
 						origin.innerHTML = "dzień";
 						break;
