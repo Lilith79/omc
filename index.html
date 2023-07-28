@@ -115,7 +115,7 @@
 						<li id="inchling" onclick="rasa(inchling)"><div class="icon"><img src="icons/inchling.png"></div>Inchling</li>
 						<li id="piglin" onclick="rasa(piglin)"><div class="icon"><img src="icons/piglin.png"></div>Piglin</li>
 						<li id="slime" onclick="rasa(slime)"><div class="icon"><img src="icons/slime.png"></div>Slime</li>
-						<li id="dimentional" onclick="rasa(dimentional)"><div class="icon"><img src="icons/weeping.png"></div>Dimensional Being</li>
+						<li id="dimensional" onclick="rasa(dimensional)"><div class="icon"><img src="icons/weeping.png"></div>Dimensional Being</li>
 						<li id="goatlin" onclick="rasa(goatlin)"><div class="icon"><img src="icons/weeping.png"></div>Goatlin</li>
 						<li id="god" onclick="rasa(god)"><div class="icon"><img src="icons/weeping.png"></div>God</li>
 						<li id="iron" onclick="rasa(iron)"><div class="icon"><img src="icons/weeping.png"></div>Iron Golem</li>
@@ -396,7 +396,17 @@
 								<li><mark class="minus">-</mark> zaczyna grę w End City</li>
 							</ul>`;
 						break;						
-						case cursed:
+						case goatlin:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;
+						case axolotl:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
 								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
 								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
@@ -406,15 +416,134 @@
 								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
 							</ul>`;
 						break;						
-						case weeping:
+						case cobblestonian:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> podwójna prędkość ataku, chodzenia i większy zasięg, gdy ma pełen pasek zasobów</li>
-								<li><mark class="plus">+</mark> pasek zasobów wypełnia się, gdy zada się ponad 1 serce obrażeń (ma to cooldown)</li>
-								<li><mark class="plus">+</mark> może dać efekt sprawiający, że wszyscy w jego obszarze dostają olbrzymie obrażenia)</li>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
 								<li><mark class="minus">-</mark> pali się od żelaza</li>
 								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> 5 serc</li>
-								<li><mark class="minus">-</mark> dostaje większe obrażenia od upadku</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case daltog:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case dimensional:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case god:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case iron:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case lato:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case lsharkian:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case nukelian:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case sharkian:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case slimeeq:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;
+						case tauros:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case trashling:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+							</ul>`;
+						break;						
+						case warden:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
+								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
+								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
+								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
+								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
 							</ul>`;
 						break;						
 						case phoenix:
