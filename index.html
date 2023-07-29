@@ -142,7 +142,8 @@
 						<li id="tauros" onclick="rasa(tauros)"><div class="icon"><img src="icons/weeping.png"></div>Tauros</li>
 						<li id="trashling" onclick="rasa(trashling)"><div class="icon"><img src="icons/weeping.png"></div>Trashling</li>
 						<li id="warden" onclick="rasa(warden)"><div class="icon"><img src="icons/weeping.png"></div>Warden</li>
-						<li id="phoenix" onclick="rasa(phoenix)"><div class="icon"><img src="icons/phoenix.png"></div>Phoenix</li></div>
+						<li id="phoenix" onclick="rasa(phoenix)"><div class="icon"><img src="icons/phoenix.png"></div>Phoenix</li>
+						<li><div class="icon"><img src="icons/weeping.png"></div>Lorem</li></div>
 					</ul>
 					<div id="origin"></div>
 				</div>
@@ -398,57 +399,64 @@
 						break;						
 						case goatlin:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> może dashować, gdy nie jest w wodzie</li>
+								<li><mark class="plus">+</mark> wszystko co go zaatakuje obrywa</li>
+								<li><mark class="plus">+</mark> skacze wyżej podczas sprintu</li>
+								<li><mark class="plus">+</mark> otrzymuje mniej obrażeń</li>
+								<li><mark class="plus">+</mark> odporny na obrażenia od upadku</li>
+								<li><mark class="minus">-</mark> wegetarianin</li>
+								<li><mark class="minus">-</mark> nie może używać tarczy</li>
 							</ul>`;
 						break;
 						case axolotl:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> Nie otrzymuje obrażeń od upadku</li>
-								<li><mark class="plus">+</mark> Silniejszy pod wodą</li>
-								<li><mark class="plus">+</mark> Je mniej</li>
-								<li><mark class="minus">-</mark> Może się regenerować</li>
-								<li><mark class="plus">+</mark> Może 'udawać martwego'</li>
-								<li><mark class="plus">+</mark> Topielce i Strażnicy są wobec ciebie neutralni</li>
-								<li><mark class="plus">+</mark><mark class="minus">-</mark> Malutki</li>
- 								<li><mark class="plus">+</mark><mark class="minus">-</mark> Mniej serc, krótszy zasięg, odporność na kaktusy i jagody</li>
-								<li><mark class="plus">+</mark><mark class="minus">-</mark> Może oddychać jedynie pod wodą</li>
-								<li><mark class="minus">-</mark> Może nosić tylko lekką zbroję</li>
-	 							<li><mark class="minus">-</mark> Wolniejszy na lądzie</li>
+								<li><mark class="plus">+</mark> nie otrzymuje obrażeń od upadku</li>
+								<li><mark class="plus">+</mark> silniejszy pod wodą</li>
+								<li><mark class="plus">+</mark> je mniej</li>
+								<li><mark class="minus">-</mark> może się regenerować</li>
+								<li><mark class="plus">+</mark> może 'udawać martwego'</li>
+								<li><mark class="plus">+</mark> topielce i Strażnicy są wobec ciebie neutralni</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> malutki</li>
+ 								<li><mark class="plus">+</mark><mark class="minus">-</mark> mniej serc, krótszy zasięg, odporność na kaktusy i jagody</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> może oddychać jedynie pod wodą</li>
+								<li><mark class="minus">-</mark> może nosić tylko lekką zbroję</li>
+	 							<li><mark class="minus">-</mark> wolniejszy na lądzie</li>
 							</ul>`;
 						break;						
 						case cobblestonian:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+       								<li><mark class="plus">+</mark> ma mniejszy zasięg łapania agro</li>
 								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> odporny na śmierć głodową i utopienie</li>
+								<li><mark class="plus">+</mark> może jeść kamień</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> ma kamienną głowę</li>
+								<li><mark class="minus">-</mark> bardziej obrywa od kilofa</li>
+								<li><mark class="minus">-</mark> wolniejszy, ledwo co skacze na wysokość 1 bloka</li>
 							</ul>`;
 						break;						
 						case daltog:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> zadaje więcej obrażeń złotem i netherite</li>
+								<li><mark class="plus">+</mark> może używać netherracka jak kamienia</li>
+								<li><mark class="plus">+</mark> leczy się swoją zdolnością</li>
+								<li><mark class="plus">+</mark> porusza się szybciej</li>
+								<li><mark class="plus">+</mark> odporny na ogień</li>
+ 								<li><mark class="plus">+</mark><mark class="minus">-</mark> można na nim jeździć</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> przeźroczysty</li>
+								<li><mark class="minus">-</mark> mięsożerny</li>
+								<li><mark class="minus">-</mark> zaczyna grę w netherze</li>
+								<li><mark class="minus">-</mark> może nosić jedynie lekką zbroję</li>
 							</ul>`;
 						break;						
 						case dimensional:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="plus">+</mark> ma bardzo długi zasięg</li>
+								<li><mark class="plus">+</mark> może przystosować się do netheru i endu</li>
+								<li><mark class="plus">+</mark> potrafi teleportować się do netheru, z zapewnieniem, że nie umrze przy tym od chociażby upadku</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> otaczają go endowe cząsteczki</li>
+								<li><mark class="minus">-</mark> ma mniej zdrowia</li>
 								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="minus">-</mark> jest wolniejszy i słabszy w normalnym świecie</li>
 							</ul>`;
 						break;						
 						case god:
@@ -461,72 +469,89 @@
 						break;						
 						case iron:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> bije więcej żelaznymi narzędziami</li>
+								<li><mark class="plus">+</mark> odporny na jagody</li>
+								<li><mark class="plus">+</mark> ma naturalną zbroję</li>
+								<li><mark class="plus">+</mark> ma większy zasięg</li>
+								<li><mark class="plus">+</mark> może niszczyć kamień rękoma</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> posyła przeciwników w powietrze</li>
+ 								<li><mark class="plus">+</mark><mark class="minus">-</mark> wyższy, wolniejszy i ma więcej zdrowia</li>
+  								<li><mark class="plus">+</mark><mark class="minus">-</mark> grę zaczyna w wiosce</li>
+								<li><mark class="minus">-</mark> szybciej się męczy</li>
 							</ul>`;
 						break;						
 						case lato:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> odporny na efekt obumarcia (wither)</li>
+								<li><mark class="plus">+</mark> ma naturalną zbroję</li>
+								<li><mark class="plus">+</mark> szybciej się porusza</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> ma jasnoniebieską skórę</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> kosztem zdrowia może zdobyć siłę</li>
+								<li><mark class="minus">-</mark> ma 3 serca mniej</li>
+								<li><mark class="minus">-</mark> jego krew wrze, gdy przebywa za długo w wodzie</li>
 							</ul>`;
 						break;						
 						case lsharkian:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
+								<li><mark class="plus">+</mark> może szybko przemieszczać się w lawie oraz w niej widzi</li>
+								<li><mark class="plus">+</mark> odporny na ogień</li>
+								<li><mark class="plus">+</mark> zadaje więcej obrażeń, gdy znajduje się w lawie</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> ma wokół siebie cząstki ognia</li>
+ 								<li><mark class="plus">+</mark><mark class="minus">-</mark> grę zaczyna w netherze</li>
+								<li><mark class="minus">-</mark> mięsożerny</li>
 								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="minus">-</mark> na lądzie może przemieszczać się wyłącznie skacząc</li>
 							</ul>`;
 						break;						
 						case nukelian:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> może "zrzucić bombę" przez wciśnięcie spacji będąc w powietrzu</li>
+								<li><mark class="plus">+</mark> szybko porusza się do przodu w trybie "zrzucenia bomby"</li>
+								<li><mark class="plus">+</mark> może jeść redstone'a</li>
+								<li><mark class="plus">+</mark> odporny na truciznę</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> przy śmierci zostawia radioaktywną chmure (trucizny)</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> może zabić się przez obszar swojego wybuchu</li>
+								<li><mark class="minus">-</mark> otrzymuje obrażenia od wody</li>
 							</ul>`;
 						break;						
 						case sharkian:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> może dashować przez wodę</li>
+								<li><mark class="plus">+</mark> zadaje więcej obrażeń, gdy jest w wodzie</li>
+								<li><mark class="plus">+</mark> może niszczyć pod wodą tak szybko jak na lądzie</li>
+								<li><mark class="plus">+</mark> samoczynnie nie tonie</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> należy do wodnej grupy zwierząt</li>
+								<li><mark class="plus">+</mark><mark class="minus">-</mark> może oddychać wyłącznie pod wodą</li>
+								<li><mark class="minus">-</mark> mięsożerny</li>
+								<li><mark class="minus">-</mark> na lądzie może się poruszać wyłącznie skacząc</li>
 							</ul>`;
 						break;						
 						case slimeeq:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> nie dostaje obrażeń od upadku</li>
+								<li><mark class="plus">+</mark> skacze na 2 bloki i szybciej biega</li>
+								<li><mark class="plus">+</mark> może przechodzić przez moby atakujące go</li>
+								<li><mark class="plus">+</mark> strzały graczy zadają mu mniej obrażeń</li>
+								<li><mark class="plus">+</mark> może leczyć slimey karmiąc je slime ballami</li>
+								<li><mark class="plus">+</mark> może karmić slimey, by na nich jeździć oraz by nie zadawały mu obrażeń</li>
+ 								<li><mark class="plus">+</mark> cukier zwiększa jego prędkość</li>
+ 								<li><mark class="plus">+</mark><mark class="minus">-</mark> wszystkie bloki są podwójnie śliskie</li>
+  								<li><mark class="plus">+</mark><mark class="minus">-</mark> dźwięki zamienione są na dźwięki slimea</li>
+								<li><mark class="minus">-</mark> nieco przeźroczysty, zielononiebieski</li>
+								<li><mark class="minus">-</mark> dostaje 2,5x obrażenia od ognia</li>
+								<li><mark class="minus">-</mark> wolniej pływa</li>
 							</ul>`;
 						break;
 						case tauros:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> może zwiększyć swoją prędkość na 20 s, z CD 2 s</li>
+								<li><mark class="plus">+</mark> może jeść trawę klikając na nią</li>
+								<li><mark class="plus">+</mark> zadaje więcej obrażeń, gdy jest w biomie "równina" (plains)</li>
+								<li><mark class="plus">+</mark> otrzymuje mniej obrażeń</li>
+								<li><mark class="plus">+</mark> ci, którzy go zaatakują sami obrywają</li>
+ 								<li><mark class="plus">+</mark><mark class="minus">-</mark> porusza się szybciej na lądzie, ale wolniej w wodzie</li>
+								<li><mark class="minus">-</mark> wegetarianin</li>
+								<li><mark class="minus">-</mark> nie może używać tarczy</li>
 							</ul>`;
 						break;						
 						case trashling:
@@ -539,12 +564,12 @@
 						break;						
 						case warden:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-								<li><mark class="plus">+</mark> lepsza regeneracja życia, gdy jest powyżej 40 lvl</li>
-								<li><mark class="plus">+</mark> każdy atak leczy i daje exp</li>
-								<li><mark class="plus">+</mark> umiejętność pozwalająca wyjść z trudnej sytuacji (?)</li>
-								<li><mark class="minus">-</mark> pali się od żelaza</li>
-								<li><mark class="minus">-</mark> dostaje obrażenia od wody</li>
-								<li><mark class="minus">-</mark> w słońcu więcej obrywa</li>
+								<li><mark class="plus">+</mark> wyższy, wolniejsz, ma więcej zdrowia, dłuższy zasięg i zadaje więcej obrażeń</li>
+								<li><mark class="plus">+</mark> ma naturalną zbroję</li>
+								<li><mark class="plus">+</mark> gdy dostatecznie obrażeń zostanie zadane jednym uderzeniem, dostaje siłę i prędkość</li>
+								<li><mark class="minus">-</mark> nie rozróżnia kolorów</li>
+								<li><mark class="minus">-</mark> mięsożerny</li>
+								<li><mark class="minus">-</mark> ślepy, gdy ma mniej niż pół paska głodu</li>
 							</ul>`;
 						break;						
 						case phoenix:
@@ -558,13 +583,13 @@
 						break;
 						case astronos:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
-       								<li><mark class="plus">+</mark> Może stać się niewrażliwy na obrażenia przy użyciu zdolności</li>
-	       							<li><mark class="plus">+</mark> Może pływać przez przestworza</li>
-	       							<li><mark class="plus">+</mark> Nie otrzymuje obrażeń od upadku</li>
-	       							<li><mark class="plus">+</mark><mark class="minus">-</mark> Otrzymuje buffy i debuffy zależnie od tego, czy jest w powietrzu</li>
-	       							<li><mark class="minus">-</mark> Może nosić tylko lekką zbroję</li>
-	       							<li><mark class="minus">-</mark> Bez nieba staje się słaby</li>
-	       							<li><mark class="minus">-</mark> Nie może używać tarcz</li>
+       								<li><mark class="plus">+</mark> może stać się niewrażliwy na obrażenia przy użyciu zdolności</li>
+	       							<li><mark class="plus">+</mark> może pływać przez przestworza</li>
+	       							<li><mark class="plus">+</mark> nie otrzymuje obrażeń od upadku</li>
+	       							<li><mark class="plus">+</mark><mark class="minus">-</mark> otrzymuje buffy i debuffy zależnie od tego, czy jest w powietrzu</li>
+	       							<li><mark class="minus">-</mark> może nosić tylko lekką zbroję</li>
+	       							<li><mark class="minus">-</mark> bez nieba staje się słaby</li>
+	       							<li><mark class="minus">-</mark> nie może używać tarcz</li>
 	       						</ul>`;
 	       					break;
 					default: 
