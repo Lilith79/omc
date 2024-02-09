@@ -122,6 +122,7 @@
 						<li id="enderian" onclick="rasa(enderian)"><div class="icon"><img src="icons/enderian.png"></div>Enderian</li>
 						<li id="elytrian" onclick="rasa(elytrian)"><div class="icon"><img src="icons/elytrian.png"></div>Elytrian</li>
 						<li id="arachnid" onclick="rasa(arachnid)"><div class="icon"><img src="icons/arachnid.png"></div>Arachnid</li>
+						<li id="icarae" onclick="rasa(icarae)"><div class="icon"><img src="icons/elytrian.png"></div>Icarae</li>
 						<!---<li id="drowned" onclick="rasa(drowned)"><div class="icon"><img src="icons/drowned.png"></div>Drowned</li>
 						<li id="floran" onclick="rasa(floran)"><div class="icon"><img src="icons/floran.png"></div>Floran</li>
 						<li id="inchling" onclick="rasa(inchling)"><div class="icon"><img src="icons/inchling.png"></div>Inchling</li>
@@ -261,6 +262,16 @@
 								<li><mark class="minus">-</mark> może jeść wyłącznie mięso</li>
 							</ul>`;
 						break;
+						case icarae:
+							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
+								<li><mark class="plus">+</mark> posiada skrzydła</li>
+								<li><mark class="plus">+</mark> zadaje więcej obrażeń z powietrza</li>
+								<li><mark class="minus">-</mark> ma 7 serc</li>
+								<li><mark class="minus">-</mark> otrzymuje więcej obrażeń</li>
+								<li><mark class="minus">-</mark> nie może korzystać z tarczy</li>
+								<li><mark class="minus">-</mark> mięsożerny</li>
+							</ul>`;
+						break;	
 						case drowned:
 							origin.innerHTML = `<ul class="list"><h1>` + oTitle + `</h1>
 								<li><mark class="plus">+</mark> może oddychać pod wodą</li>
